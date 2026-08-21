@@ -15,10 +15,10 @@
         </p>
         <div class="hero__tags">
           <BaseTag
-            type="bordered"
             v-for="(tag, i) of tags"
             :key="tag"
             v-motion
+            type="bordered"
             bordered
             :initial="{ opacity: 0, y: 8 }"
             :visible-once="{
@@ -40,7 +40,7 @@
 const startDate = new Date('2024-07-22');
 const now = new Date();
 const experience = now.getFullYear() - startDate.getFullYear();
-const tags = ['Vue / Nuxt', 'TypeScript', `${experience}+ лет`];
+const tags = ['Vue / Nuxt', 'TypeScript', `${String(experience)}+ лет`];
 </script>
 
 <style scoped lang="scss">

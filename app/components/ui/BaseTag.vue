@@ -13,7 +13,7 @@ withDefaults(
   }>(),
   {
     size: 'medium',
-    bordered: false,
+    type: 'default',
     dashed: false,
   },
 );

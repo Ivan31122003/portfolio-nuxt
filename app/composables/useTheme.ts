@@ -10,7 +10,9 @@ export const useTheme = () => {
     }
   };
 
-  const toggle = () => apply(theme.value === 'dark' ? 'light' : 'dark');
+  const toggle = () => {
+    apply(theme.value === 'dark' ? 'light' : 'dark');
+  };
 
   onMounted(() => {
     const saved = localStorage.getItem('theme');

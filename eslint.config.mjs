@@ -23,7 +23,7 @@ export default withNuxt({
     'vue/block-order': [
       'error',
       {
-        order: ['script', 'template', 'style'],
+        order: ['template', 'script', 'style'],
       },
     ],
     'vue/component-api-style': ['error', ['script-setup']],

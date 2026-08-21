@@ -1,9 +1,9 @@
 <template>
   <div class="orbits-planets">
     <div
-      class="orbits-planets__planet"
       v-for="planet in planets"
       :key="planet.id"
+      class="orbits-planets__planet"
       :style="{
         '--bg-color': planet.color,
         '--radius': planet.radius,
