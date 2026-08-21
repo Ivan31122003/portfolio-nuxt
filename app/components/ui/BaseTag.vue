@@ -1,0 +1,58 @@
+<template>
+  <div class="tag" :class="[size, `tag--${type}`, { 'tag--dashed': dashed }]">
+    <slot />
+  </div>
+</template>
+
+<script setup lang="ts">
+withDefaults(
+  defineProps<{
+    size?: 'small' | 'medium' | 'large';
+    type?: 'default' | 'bordered' | 'hard';
+    dashed?: boolean;
+  }>(),
+  {
+    size: 'medium',
+    bordered: false,
+    dashed: false,
+  },
+);
+</script>
+
+<style scoped lang="scss">
+.tag {
+  display: inline-block;
+  color: var(--color-text);
+  background-color: var(--color-accent);
+  border-radius: 10px;
+
+  &.small {
+    padding: 4px 8px;
+    font-size: var(--fs-small);
+  }
+
+  &.medium {
+    padding: 8px 16px;
+  }
+
+  &.large {
+    padding: 12px 24px;
+    font-size: var(--fs-title);
+  }
+
+  &--bordered {
+    border: 1px solid var(--color-accent);
+    background-color: transparent;
+    color: var(--color-text);
+  }
+
+  &--dashed {
+    border-style: dashed;
+  }
+
+  &--hard {
+    background-color: var(--color-danger);
+    color: var(--color-text);
+  }
+}
+</style>
