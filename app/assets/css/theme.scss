@@ -1,0 +1,30 @@
+:root,
+[data-theme='dark'] {
+  --color-bg: #282c33;
+  --color-header-bg: #33333399;
+  --color-text: #ffffff;
+  --color-text-muted: #abb2bf;
+  --color-border: #ffffff;
+  --color-accent: #e957ff;
+  --color-on-accent: #c778dd;
+  --color-danger: #ff0000;
+}
+
+[data-theme='light'] {
+  --color-bg: #f5f6f8;
+  --color-header-bg: #cccccc99;
+  --color-text: #282c33;
+  --color-text-muted: #4b5263;
+  --color-border: #4b5263;
+  --color-accent: #e957ff;
+  --color-on-accent: #c778dd;
+  --color-danger: #fa2d2d;
+}
+
+html {
+  color-scheme: dark;
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+}

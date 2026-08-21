@@ -1,6 +1,6 @@
 // @ts-check
-import eslintConfigPrettier from 'eslint-config-prettier/flat'
-import withNuxt from './.nuxt/eslint.config.mjs'
+import eslintConfigPrettier from 'eslint-config-prettier/flat';
+import withNuxt from './.nuxt/eslint.config.mjs';
 
 export default withNuxt({
   linterOptions: {
@@ -51,4 +51,4 @@ export default withNuxt({
       '@typescript-eslint/switch-exhaustiveness-check': 'error',
     },
   })
-  .append(eslintConfigPrettier)
+  .append(eslintConfigPrettier);
