@@ -18,6 +18,10 @@ const navigation = [
     title: 'проекты',
     link: '#projects',
   },
+  {
+    title: 'образование',
+    link: '#education',
+  },
 ];
 </script>
 
