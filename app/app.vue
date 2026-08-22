@@ -4,6 +4,7 @@
     <main id="main">
       <SectionHero />
       <SectionProjects />
+      <SectionEducation />
     </main>
   </div>
 </template>
