@@ -1,6 +1,6 @@
 <template>
   <BaseContent>
-    <section class="section-experience">
+    <section id="experience" class="section-experience">
       <SectionName>опыт работы</SectionName>
       <div class="section-experience__content">
         <JobCard v-for="job in jobs" :key="job.title" v-bind="job" />
