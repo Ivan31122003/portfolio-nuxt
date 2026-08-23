@@ -42,7 +42,7 @@ const navigation = [
 
 <style scoped lang="scss">
 .header {
-  padding: 20px 0;
+  padding: 16px 0;
   width: 100%;
   position: fixed;
   display: flex;

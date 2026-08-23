@@ -22,11 +22,11 @@ defineProps<{
 
 <style scoped lang="scss">
 .education-card {
-  padding: 20px;
+  padding: 16px;
   border: 1px solid var(--color-border);
   border-radius: 8px;
   display: flex;
-  gap: 20px;
+  gap: 16px;
 
   &__icon {
     width: 64px;

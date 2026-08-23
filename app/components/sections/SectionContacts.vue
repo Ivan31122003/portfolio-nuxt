@@ -64,7 +64,7 @@ const contacts = [
 <style scoped lang="scss">
 .section-contacts {
   &__content {
-    margin-top: 20px;
+    margin-top: 16px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
@@ -104,7 +104,7 @@ const contacts = [
 
   &__try-to-contact-button {
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border: 1px solid var(--color-border);
     border-radius: 8px;
     background-color: var(--color-bg);
