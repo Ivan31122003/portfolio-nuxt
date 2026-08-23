@@ -3,6 +3,7 @@
     <AppHeader />
     <main id="main">
       <SectionHero />
+      <SectionExperience />
       <SectionProjects />
       <SectionEducation />
       <SectionContacts />
