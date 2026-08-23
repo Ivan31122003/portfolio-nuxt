@@ -23,6 +23,7 @@ const jobs = [
     company: 'ООО "Альфа-Интегратор-Инфоэнерго"',
     stack: [
       'TypeScript',
+      'JavaScript',
       'Vue',
       'Nuxt',
       'Storybook',
@@ -32,7 +33,6 @@ const jobs = [
       'Node.js',
       'PostgreSQL',
       'Docker',
-      'Vue Router',
     ],
     points: [
       'Спроектировал и реализовал сложный UI-компонент таблицы с обширной настройкой колонок и inline-редактированием',
@@ -48,7 +48,7 @@ const jobs = [
 <style lang="scss" scoped>
 .section-experience {
   &__content {
-    margin-top: 20px;
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     gap: 16px;

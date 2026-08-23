@@ -28,9 +28,9 @@ useHead({
   max-width: 1920px;
   margin-inline: auto;
   overflow: hidden;
-  padding: 82px 0 41px;
+  padding: 80px 0 40px;
   display: flex;
   flex-direction: column;
-  gap: 41px;
+  gap: 40px;
 }
 </style>

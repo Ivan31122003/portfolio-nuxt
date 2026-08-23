@@ -55,7 +55,7 @@ const tags = [
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
 
   @include up($bp-lg) {
     flex-direction: row;
@@ -65,23 +65,10 @@ const tags = [
 
   &__tag {
     color: var(--color-text);
-    animation: pulse 2s infinite;
-
-    @keyframes pulse {
-      0% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0.3;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
   }
 
   &__title {
-    margin-top: 25px;
+    margin-top: 24px;
     font-size: var(--fs-display);
     color: var(--color-text);
     line-height: 1.2;
@@ -92,14 +79,14 @@ const tags = [
   }
 
   &__desc {
-    margin-top: 25px;
+    margin-top: 24px;
   }
 
   &__tags {
-    margin-top: 12px;
+    margin-top: 16px;
     display: inline-flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
   }
 }
 </style>

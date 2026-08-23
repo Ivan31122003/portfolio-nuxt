@@ -30,10 +30,10 @@ const education = [
 <style scoped lang="scss">
 .section-education {
   &__content {
-    margin-top: 20px;
+    margin-top: 16px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
+    gap: 16px;
 
     @include up($bp-xl) {
       grid-template-columns: repeat(2, 1fr);
