@@ -5,6 +5,7 @@
       <SectionHero />
       <SectionProjects />
       <SectionEducation />
+      <SectionContacts />
     </main>
   </div>
 </template>
@@ -21,10 +22,11 @@ useHead({
 
 <style scoped lang="scss">
 #main {
+  width: 100%;
   max-width: 1920px;
+  margin-inline: auto;
   overflow: hidden;
-
-  padding-top: 82px;
+  padding: 82px 0;
   display: flex;
   flex-direction: column;
   gap: 41px;
