@@ -2,12 +2,12 @@
   <BaseContent>
     <section id="hero" class="hero">
       <div>
-        <BaseTag type="bordered" dashed
-          ><span class="hero__tag">Открыт к новым предложениям</span></BaseTag
-        >
+        <BaseTag type="bordered" dashed>
+          <span class="hero__tag">Открыт к новым предложениям</span>
+        </BaseTag>
         <h1 class="hero__title">
           Иван Шестаков<br />
-          <BaseHighlight>Frontend</BaseHighlight> разработчик
+          <BaseHighlight>Frontend</BaseHighlight>-разработчик
         </h1>
         <p class="hero__desc">
           /* Создаю удобные и красивые <BaseHighlight>интерфейсы</BaseHighlight>, которые не боятся

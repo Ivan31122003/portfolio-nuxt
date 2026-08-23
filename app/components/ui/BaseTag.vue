@@ -8,7 +8,7 @@
 withDefaults(
   defineProps<{
     size?: 'small' | 'medium' | 'large';
-    type?: 'default' | 'bordered' | 'hard';
+    type?: 'default' | 'bordered';
     dashed?: boolean;
   }>(),
   {
@@ -48,11 +48,6 @@ withDefaults(
 
   &--dashed {
     border-style: dashed;
-  }
-
-  &--hard {
-    background-color: var(--color-danger);
-    color: var(--color-text);
   }
 }
 </style>

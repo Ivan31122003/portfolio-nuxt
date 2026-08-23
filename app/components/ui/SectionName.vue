@@ -1,11 +1,11 @@
 <template>
-  <h2 class="section-name">
-    <div class="sectio-name__title">
+  <div class="section-name">
+    <div class="section-name__title">
       <BaseHighlight>#</BaseHighlight>
-      <span class="section-name__title-text"><slot /></span>
+      <h2 class="section-name__title-text"><slot /></h2>
     </div>
     <span class="section-name__line" />
-  </h2>
+  </div>
 </template>
 
 <style scoped lang="scss">
@@ -21,6 +21,9 @@
   }
 
   &__title-text {
+    display: inline-block;
+    font-size: var(--fs-heading);
+    font-weight: 600;
     color: var(--color-text);
   }
 

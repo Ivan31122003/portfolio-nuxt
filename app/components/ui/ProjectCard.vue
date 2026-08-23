@@ -6,7 +6,6 @@
     <div class="project-card__content">
       <div class="project-card__meta-info">
         <h3>{{ directionProject }}</h3>
-        <BaseTag v-if="isHard" type="hard" size="small">HARD</BaseTag>
       </div>
       <h3 class="project-card__name">{{ title }}</h3>
       <p class="project-card__description">{{ description }}</p>
@@ -49,11 +48,9 @@ const props = withDefaults(
     stack: string[];
     achievements: string[];
     isPet?: boolean;
-    isHard?: boolean;
   }>(),
   {
     isPet: false,
-    isHard: false,
   },
 );
 
