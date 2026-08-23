@@ -35,7 +35,7 @@ const education = [
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
 
-    @include up($bp-lg) {
+    @include up($bp-xl) {
       grid-template-columns: repeat(2, 1fr);
     }
   }

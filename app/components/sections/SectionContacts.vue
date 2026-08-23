@@ -7,7 +7,7 @@
           <ContactCard
             v-for="(contact, i) in contacts"
             :key="contact.title"
-            v-motion-slide-visible-once-bottom
+            v-motion-fade-visible-once
             :delay="(i - 1) * 120"
             :href="contact.href"
             :title="contact.title"
@@ -106,6 +106,7 @@ const contacts = [
     text-decoration: none;
     padding: 10px 20px;
     border: 1px solid var(--color-border);
+    border-radius: 8px;
     background-color: var(--color-bg);
     color: var(--color-text);
     font-size: var(--color-text);
