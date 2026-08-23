@@ -9,7 +9,8 @@
 </template>
 
 <script setup lang="ts">
-const currentYear = new Date().getFullYear();
+import { DATES } from '@/utils/constance';
+const currentYear = DATES.TODAY.getFullYear();
 </script>
 
 <style scoped lang="scss">
