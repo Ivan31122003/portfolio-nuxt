@@ -7,6 +7,7 @@
       <SectionEducation />
       <SectionContacts />
     </main>
+    <AppFooter />
   </div>
 </template>
 
@@ -26,7 +27,7 @@ useHead({
   max-width: 1920px;
   margin-inline: auto;
   overflow: hidden;
-  padding: 82px 0;
+  padding: 82px 0 41px;
   display: flex;
   flex-direction: column;
   gap: 41px;

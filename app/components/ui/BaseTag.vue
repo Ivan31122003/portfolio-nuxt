@@ -24,7 +24,7 @@ withDefaults(
   display: inline-block;
   color: var(--color-text);
   background-color: var(--color-accent);
-  border-radius: 10px;
+  border-radius: 8px;
 
   &.small {
     padding: 4px 8px;

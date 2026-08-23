@@ -1,14 +1,14 @@
 <template>
   <header class="header">
-    <span class="header__logo">shestiv</span>
-    <div class="header__right">
+    <BaseContent class="header__inner">
+      <span class="header__logo">Ivan Shestakov</span>
       <nav class="header__nav">
         <a v-for="item in navigation" :key="item.title" :href="item.link" class="header__nav-item">
           {{ item.title }}
         </a>
       </nav>
       <ThemeSwitcher />
-    </div>
+    </BaseContent>
   </header>
 </template>
 
@@ -31,23 +31,25 @@ const navigation = [
 
 <style scoped lang="scss">
 .header {
+  padding: 20px 0;
   width: 100%;
   position: fixed;
-  z-index: 100;
-  padding: 20px 16px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  z-index: 100;
   background-color: var(--color-header-bg);
   font-size: var(--fs-body);
 
-  &__logo {
-    color: var(--color-text);
+  &__inner {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  &__right {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  &__logo {
+    color: var(--color-text);
   }
 
   &__nav {
