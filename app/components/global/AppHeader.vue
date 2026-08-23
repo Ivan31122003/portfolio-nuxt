@@ -7,7 +7,10 @@
           {{ item.title }}
         </a>
       </nav>
-      <ThemeSwitcher />
+      <div class="header__actions">
+        <ThemeSwitcher />
+        <MenuBurger :items="navigation" />
+      </div>
     </BaseContent>
   </header>
 </template>
@@ -61,8 +64,18 @@ const navigation = [
   }
 
   &__nav {
-    display: flex;
+    display: none;
     gap: 32px;
+
+    @include up($bp-lg) {
+      display: flex;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 
   &__nav-item {
