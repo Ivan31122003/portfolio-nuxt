@@ -1,6 +1,6 @@
 <template>
   <BaseContent>
-    <section class="hero">
+    <section id="hero" class="hero">
       <div>
         <BaseTag type="bordered" dashed
           ><span class="hero__tag">Открыт к новым предложениям</span></BaseTag
@@ -37,10 +37,16 @@
 </template>
 
 <script setup lang="ts">
-const startDate = new Date('2024-07-22');
-const now = new Date();
-const experience = now.getFullYear() - startDate.getFullYear();
-const tags = ['Vue / Nuxt', 'TypeScript', `${String(experience)}+ лет`];
+import { DATES } from '@/utils/constance';
+import { getYearDeclension } from '@/utils/date';
+
+const differenceYear = DATES.TODAY.getFullYear() - DATES.START_WORK_DATE.getFullYear();
+
+const tags = [
+  'Vue / Nuxt',
+  'TypeScript',
+  `${differenceYear}+ ${getYearDeclension(differenceYear)} опыта`,
+];
 </script>
 
 <style scoped lang="scss">

@@ -15,6 +15,14 @@
 <script setup lang="ts">
 const navigation = [
   {
+    title: 'главная',
+    link: '#hero',
+  },
+  {
+    title: 'опыт работы',
+    link: '#experience',
+  },
+  {
     title: 'проекты',
     link: '#projects',
   },
@@ -54,7 +62,7 @@ const navigation = [
 
   &__nav {
     display: flex;
-    gap: 16px;
+    gap: 32px;
   }
 
   &__nav-item {
