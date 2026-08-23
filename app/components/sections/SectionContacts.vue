@@ -19,13 +19,7 @@
           <p class="section-contacts__try-to-contact-description">
             Открыт для full-time работы. Пишите — отвечу в течение нескольких часов.
           </p>
-          <a
-            class="section-contacts__try-to-contact-button"
-            href="https://t.me/shestiv"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Написать в Telegram</a
-          >
+          <WriteMeButton />
         </div>
       </div>
     </section>
@@ -100,26 +94,6 @@ const contacts = [
     font-size: var(--color-text);
     font-weight: 600;
     color: var(--color-text);
-  }
-
-  &__try-to-contact-button {
-    text-decoration: none;
-    padding: 8px 16px;
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
-    background-color: var(--color-bg);
-    color: var(--color-text);
-    font-size: var(--color-text);
-    cursor: pointer;
-    transition:
-      border-color 0.2s ease-in-out,
-      background-color 0.2s ease-in-out,
-      transform 0.2s ease-in-out;
-
-    &:hover {
-      border-color: var(--color-accent);
-      background-color: var(--color-accent);
-    }
   }
 }
 </style>

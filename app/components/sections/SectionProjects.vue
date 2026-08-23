@@ -21,7 +21,6 @@ const projects = [
       'Разработка кастомного скроллбара для работы с большими данными без потери производительности',
     ],
     stack: ['Vue 3', 'TypeScript', 'Storybook', 'Vite', 'Vitest', 'SCSS'],
-    isHard: true,
   },
   {
     id: 2,
