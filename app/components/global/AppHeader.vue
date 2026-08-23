@@ -22,6 +22,10 @@ const navigation = [
     title: 'образование',
     link: '#education',
   },
+  {
+    title: 'контакты',
+    link: '#contacts',
+  },
 ];
 </script>
 
@@ -54,6 +58,11 @@ const navigation = [
   &__nav-item {
     text-decoration: none;
     color: var(--color-text);
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--color-accent);
+    }
   }
 }
 </style>

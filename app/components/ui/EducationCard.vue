@@ -24,6 +24,7 @@ defineProps<{
 .education-card {
   padding: 20px;
   border: 1px solid var(--color-border);
+  border-radius: 8px;
   display: flex;
   gap: 20px;
 

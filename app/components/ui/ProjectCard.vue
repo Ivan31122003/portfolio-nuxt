@@ -64,6 +64,7 @@ const directionProject = props.isPet ? 'Pet-проект' : 'Коммерчес�
 .project-card {
   position: relative;
   border: 1px solid var(--color-border);
+  border-radius: 8px;
   padding: 20px;
   transition:
     border-color 0.3s ease,
