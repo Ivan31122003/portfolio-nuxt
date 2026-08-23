@@ -19,7 +19,7 @@ const differenceMonth = DATES.TODAY.getMonth() - DATES.START_WORK_DATE.getMonth(
 const jobs = [
   {
     title: 'Frontend-разработчик',
-    period: `Июль 2024 - наст. время | ${differenceYear} ${getYearDeclension(differenceYear)} ${differenceMonth} ${getMonthDeclension(differenceMonth)}`,
+    period: `Июль 2024 - наст. время | ${String(differenceYear)} ${getYearDeclension(differenceYear)} ${String(differenceMonth)} ${getMonthDeclension(differenceMonth)}`,
     company: 'ООО "Альфа-Интегратор-Инфоэнерго"',
     stack: [
       'TypeScript',

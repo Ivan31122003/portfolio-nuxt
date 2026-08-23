@@ -45,7 +45,7 @@ const differenceYear = DATES.TODAY.getFullYear() - DATES.START_WORK_DATE.getFull
 const tags = [
   'Vue / Nuxt',
   'TypeScript',
-  `${differenceYear}+ ${getYearDeclension(differenceYear)} опыта`,
+  `${String(differenceYear)}+ ${getYearDeclension(differenceYear)} опыта`,
 ];
 </script>
 

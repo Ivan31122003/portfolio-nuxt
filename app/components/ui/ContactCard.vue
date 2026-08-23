@@ -12,12 +12,12 @@
   </component>
 </template>
 <script setup lang="ts">
-const { href } = defineProps<{
+const props = defineProps<{
   href?: string;
   title: string;
   value: string;
 }>();
-const isExternal = computed(() => href?.startsWith('http'));
+const isExternal = computed(() => props.href?.startsWith('http'));
 </script>
 
 <style scoped lang="scss">
