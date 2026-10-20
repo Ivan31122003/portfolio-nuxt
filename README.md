@@ -1,75 +1,91 @@
-# Nuxt Minimal Starter
+# Портфолио
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[shestiv.tech](https://shestiv.tech) — одностраничное портфолио frontend-разработчика. Сайт рассказывает об опыте, проектах, образовании и способах связи.
 
-## Setup
+## Возможности
 
-Make sure to install dependencies:
+- адаптивная вёрстка для мобильных устройств и широких экранов;
+- тёмная и светлая темы с сохранением выбранного варианта в `localStorage`;
+- анимации появления через VueUse Motion и CSS-анимация SVG-синусоиды;
+- компонентная структура: секции страницы, UI-примитивы и общие компоненты;
+- SEO-метаданные, Open Graph и канонический URL;
+- статическая генерация для быстрой загрузки и простой публикации.
+
+## Стек
+
+- [Nuxt 4](https://nuxt.com/)
+- [Vue 3](https://vuejs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- SCSS
+- [VueUse Motion](https://motion.vueuse.org/)
+- ESLint и Prettier
+
+
+
+## Локальный запуск
+
+Требуются актуальные версии [Node.js](https://nodejs.org/) и npm.
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+npm ci
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+После запуска приложение доступно по адресу, который выведет Nuxt в терминале (обычно `http://localhost:3000`). Команда запускает сервер с параметром `--host`, поэтому сайт также можно открыть с других устройств в локальной сети.
 
-Build the application for production:
+## Команды
 
-```bash
-# npm
-npm run build
 
-# pnpm
-pnpm build
+| Команда                  | Описание                                                  |
+| ------------------------ | --------------------------------------------------------- |
+| `npm run dev`            | Запускает сервер разработки.                              |
+| `npm run build`          | Собирает production-версию Nuxt-приложения.               |
+| `npm run generate`       | Генерирует статическую версию сайта в `.output/public`.   |
+| `npm run preview`        | Запускает предпросмотр production-сборки.                 |
+| `npm run preview:static` | Генерирует статический сайт и запускает его предпросмотр. |
+| `npm run lint`           | Проверяет код ESLint.                                     |
+| `npm run lint:fix`       | Исправляет устранимые замечания ESLint.                   |
+| `npm run format`         | Проверяет форматирование Prettier.                        |
+| `npm run format:write`   | Форматирует файлы с помощью Prettier.                     |
 
-# yarn
-yarn build
 
-# bun
-bun run build
+
+
+## Структура проекта
+
+```text
+app/
+├── assets/css/       # Глобальные стили, темы и брейкпоинты
+├── components/
+│   ├── global/       # Шапка и подвал
+│   ├── icons/        # SVG-иконки
+│   ├── sections/     # Секции страницы
+│   └── ui/           # Переиспользуемые UI-компоненты
+├── composables/      # Композиционные функции, включая управление темой
+├── utils/            # Вспомогательные функции и константы
+└── app.vue           # Корневой компонент и SEO-метаданные
+
+public/               # Статические файлы
 ```
 
-Locally preview production build:
 
-```bash
-# npm
-npm run preview
 
-# pnpm
-pnpm preview
+## Сборка и публикация
 
-# yarn
-yarn preview
+В GitLab CI для merge request и ветки по умолчанию выполняются проверки форматирования и ESLint, затем генерируется статическая версия сайта. При пуше в ветку по умолчанию содержимое `.output/public` публикуется на FTP-сервер.
 
-# bun
-bun run preview
-```
+Для развёртывания в настройках CI/CD должны быть заданы защищённые переменные:
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- `FTP_USER`
+- `FTP_PASSWORD`
+- `FTP_HOST`
+- `FTP_REMOTE_DIR`
+
+
+
+## Контакты
+
+- Сайт: [shestiv.tech](https://shestiv.tech)
+- Telegram: [@shestiv](https://t.me/shestiv)
+- GitLab: [ivan31122003](https://gitlab.com/ivan31122003)
+
